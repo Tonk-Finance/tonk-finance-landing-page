@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.0.7",
+    "@iconscout/react-unicons": "^1.1.6",
+    "@iconscout/unicons": "^4.0.1",
+    "@next/bundle-analyzer": "^13.0.7",
+    "@next/font": "^13.0.7",
+    "css-select": "^5.1.0",
     "next": "13.0.7",
+    "next-unused": "^0.0.6",
+    "nth-check": "^2.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }

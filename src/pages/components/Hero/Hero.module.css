@@ -1,0 +1,88 @@
+.fontMain {
+  font-size: 6rem;
+  margin: 0;
+  line-height: 6rem;
+}
+@media screen and (max-width: 524px) {
+  .fontMain {
+    font-size: 4rem;
+  }
+}
+.fontSecondary {
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-size: 2rem;
+}
+.gridElement {
+  align-items: center;
+  padding-top: 1rem;
+  flex-grow: 0;
+  display: inherit;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+@media screen and (max-width: 1400px) {
+  .gridElement {
+    justify-content: center;
+  }
+}
+.flexColumn {
+  width: 100%;
+  min-height: 640px;
+  min-width: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttonCustom {
+  font-family: var(--inter-font);
+  margin-top: 1rem;
+  font-size: 2rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  padding: 0;
+  background-color: #2269f8;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 24px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0 8px 24px -16px rgba(66, 68, 90, 1);
+  box-shadow: 0 8px 24px -16px rgba(66, 68, 90, 1);
+}
+.divider {
+  height: 10px;
+  width: 100%;
+  background-color: #2269f8;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.image {
+  padding: 0;
+  align-items: center;
+  padding-top: 1rem;
+  flex-grow: 0;
+  display: inherit;
+  max-width: 50%;
+  flex-basis: 50%;
+  background-image: url("tonyield-app-mockup.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1400px) {
+  .image {
+    background-image: none;
+  }
+}
+.img {
+  aspect-ratio: attr(width) / attr(height);
+}
