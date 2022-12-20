@@ -5,6 +5,7 @@ import HeroTitle from "./components/Hero/HeroTitle";
 import Divider from "./components/Hero/Divider";
 import dynamic from "next/dynamic";
 import { Suspense, memo } from "react";
+import { useState } from "react";
 
 const DynamicFeatures = dynamic(
   () => import("./components/Features/FeaturesLayout"),
@@ -29,6 +30,13 @@ const DynamicSocials = dynamic(() => import("./components/Socials/Socials"), {
 });
 
 const IndexPage = memo(() => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
       <Head>
@@ -61,22 +69,34 @@ const IndexPage = memo(() => {
       </Head>
 
       <div className={styles.mainContainer}>
-        <CustomNavbar />
-        <HeroTitle />
-        <Suspense fallback={`Loading...`}>
-          <DynamicImage />
-        </Suspense>
-        <Divider />
-        <Suspense fallback={`Loading...`}>
-          <DynamicFeatures />
-        </Suspense>
+        <CustomNavbar
+          open={open}
+          handleOpen={handleOpen}
+          handleClose={handleClose}
+        />
+        {!open && (
+          <>
+            <HeroTitle />
+            <Suspense fallback={`Loading...`}>
+              <DynamicImage />
+            </Suspense>
+            <Divider />
+            <Suspense fallback={`Loading...`}>
+              <DynamicFeatures />
+            </Suspense>
+          </>
+        )}
       </div>
-      <Suspense fallback={`Loading...`}>
-        <DynamicCallToAction />
-      </Suspense>
-      <Suspense fallback={`Loading...`}>
-        <DynamicSocials />
-      </Suspense>
+      {!open && (
+        <>
+          <Suspense fallback={`Loading...`}>
+            <DynamicCallToAction />
+          </Suspense>
+          <Suspense fallback={`Loading...`}>
+            <DynamicSocials />
+          </Suspense>
+        </>
+      )}
     </>
   );
 });

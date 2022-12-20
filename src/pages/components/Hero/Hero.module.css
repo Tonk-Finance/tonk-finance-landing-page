@@ -3,11 +3,6 @@
   margin: 0;
   line-height: 6rem;
 }
-@media screen and (max-width: 524px) {
-  .fontMain {
-    font-size: 4rem;
-  }
-}
 .fontSecondary {
   color: rgba(0, 0, 0, 0.5) !important;
   font-size: 2rem;
@@ -33,6 +28,26 @@
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 524px) {
+  .fontMain {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .fontSecondary {
+    text-align: center;
+  }
+  .gridElement {
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .flexColumn {
+    align-items: center;
+    width: 100%;
+  }
+}
+
 .buttonCustom {
   font-family: var(--inter-font);
   margin-top: 1rem;
@@ -80,6 +95,7 @@
 }
 @media screen and (max-width: 1400px) {
   .image {
+    display: none;
     background-image: none;
   }
 }
