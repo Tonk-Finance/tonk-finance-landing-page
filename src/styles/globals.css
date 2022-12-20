@@ -84,7 +84,7 @@ html {
 
 body {
   color: rbg(--foreground-rgb);
-  font-family: "myFont", sans-serif;
+  font-family: var(--inter-font);
   overflow: hidden;
   background: linear-gradient(
       to bottom,
