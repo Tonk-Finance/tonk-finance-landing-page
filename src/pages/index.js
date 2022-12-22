@@ -42,10 +42,7 @@ const IndexPage = memo(() => {
       <Head>
         <title>TONyield</title>
         <meta name="description" content="Tons of yield. On TON." />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />{" "}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
           type="image/png"
