@@ -3,7 +3,7 @@ const HeroTitle = () => {
   return (
     <div className={styles.gridElement}>
       <div className={styles.flexColumn}>
-        <h1 className={styles.fontMain}>Our platform</h1>
+        <h1 className={styles.fontMainSecondary}>Our platform</h1>
         <hr className={styles.divider} />
         <div>
           <h1 className={styles.fontSecondary}>
