@@ -79,7 +79,10 @@ const CustomNavbar = ({ open, handleOpen, handleClose }) => {
           <a className={styles.navlink} href="/about">
             About
           </a>
-          <a className={styles.navlink} href="/docs">
+          <a
+            className={styles.navlink}
+            href="https://docs.tonk.finance/tonk-finance/"
+          >
             Docs
           </a>
         </div>
@@ -177,7 +180,10 @@ const CustomNavbar = ({ open, handleOpen, handleClose }) => {
               <a className={styles.navlink} href="/about">
                 About
               </a>
-              <a className={styles.navlink} href="/docs">
+              <a
+                className={styles.navlink}
+                href="https://docs.tonk.finance/tonk-finance/"
+              >
                 Docs
               </a>
             </div>
