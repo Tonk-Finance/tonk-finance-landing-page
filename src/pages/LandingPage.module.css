@@ -2,12 +2,7 @@
   min-height: 100vh;
   overflow: hidden;
   width: 100vw;
-  background: linear-gradient(
-    116.82deg,
-    rgba(34, 105, 248, 0.1) 0.01%,
-    rgba(34, 105, 248, 0.02) 40.63%,
-    rgba(34, 105, 248, 0.1) 100%
-  );
+
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -16,8 +11,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.secondaryContainer {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
 @media screen and (min-width: 1400px) {
   .mainContainer {
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
+  }
+
+  .secondaryContainer {
     padding-left: 20rem !important;
     padding-right: 20rem !important;
   }

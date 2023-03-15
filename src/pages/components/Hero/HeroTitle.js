@@ -11,7 +11,7 @@ const HeroTitle = () => {
         <h1 className={styles.fontSecondary}>
           Let your idle assets work for you.
         </h1>
-        <button className={styles.buttonCustom}>GO TO APP</button>
+        <button className={styles.buttonCustom}>Read the docs</button>
       </div>
     </div>
   );

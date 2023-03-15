@@ -17,7 +17,7 @@ const FeaturesLayout = () => {
             vector={
               <svg
                 // width="745"
-                height="8rem"
+                height="12rem"
                 viewBox="0 0 745 750"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
