@@ -1,21 +1,26 @@
 import styles from "./FeaturesLayout.module.css";
-const MainCard = ({ number, title, text }) => {
+const MainCard = ({ number, title, text, h }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.cardInner}>
+      <div
+        className={styles.cardInner}
+        style={{ backgroundColor: number === "1" && "#84D3FF" }}
+      >
         <div
           style={{
             width: "100%",
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
-            //   justifyContent: "space-between",
+            alignItems: "flex-start",
+            height: h,
+
+            justifyContent: "space-between",
           }}
         >
           <div
             style={{
-              borderRadius: "50%",
-              backgroundColor: "rgba(34, 105, 248, 0.6)",
+              borderRadius: "5px",
+              backgroundColor: "#fff",
               width: "4rem",
               height: "4rem",
               lineHeight: "4rem",

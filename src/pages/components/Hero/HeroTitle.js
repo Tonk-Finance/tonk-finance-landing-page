@@ -4,8 +4,8 @@ const HeroTitle = () => {
     <div className={styles.gridElement}>
       <div className={styles.flexColumn}>
         <h1 className={styles.fontMain}>
-          <span style={{ color: "#2269F8" }}>TONK</span>.
-          <span style={{ color: "#CCA300" }}>FINANCE</span>
+          Maximize Your Crypto Earnings with{" "}
+          <span className={styles.highlight}>Ease</span>
         </h1>
         <hr className={styles.divider} />
         <h1 className={styles.fontSecondary}>

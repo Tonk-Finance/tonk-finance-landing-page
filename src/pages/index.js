@@ -77,7 +77,7 @@ const IndexPage = memo(() => {
             <Suspense fallback={`Loading...`}>
               <DynamicImage />
             </Suspense>
-            <Divider />
+            {/* <Divider /> */}
             <Suspense fallback={`Loading...`}>
               <DynamicFeatures />
             </Suspense>

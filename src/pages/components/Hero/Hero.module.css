@@ -1,11 +1,22 @@
 .fontMain {
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0;
   line-height: 6rem;
+  font-family: "Khand", "sans-serif";
+  font-weight: 500;
+}
+.highlight {
+  background: -webkit-linear-gradient(45deg, #2269f8 0%, #84d3ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Khand", "sans-serif";
+  font-weight: bold;
 }
 .fontSecondary {
   color: rgba(0, 0, 0, 0.5) !important;
   font-size: 2rem;
+  font-family: "Khand", "sans-serif";
+  font-weight: normal;
 }
 .gridElement {
   align-items: center;
