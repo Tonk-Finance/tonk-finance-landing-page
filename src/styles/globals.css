@@ -102,10 +102,10 @@ body {
   font-family: var(--inter-font);
   overflow: hidden;
   background: linear-gradient(
-    116.82deg,
+    124.96deg,
     rgba(34, 105, 248, 0.1) 0.01%,
-    rgba(34, 105, 248, 0.02) 40.63%,
-    rgba(34, 105, 248, 0.1) 100%
+    rgba(34, 105, 248, 0.02) 34.01%,
+    rgba(34, 105, 248, 0.15) 83.71%
   );
   /* background: linear-gradient(
       to bottom,
