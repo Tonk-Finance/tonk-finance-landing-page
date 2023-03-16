@@ -3,7 +3,7 @@ import styles from "./LandingPage.module.css";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import { useState } from "react";
 import Head from "next/head";
-
+import OurMission from "./components/Mission/OurMission";
 const about = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -49,18 +49,16 @@ const about = () => {
           handleClose={handleClose}
         />
         {!open && (
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <HeroTitle />
-          </div>
+          <>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <OurMission />
+            </div>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <HeroTitle />
+            </div>
+          </>
         )}
       </div>
-      {/* {!open && (
-        <div className={styles.mainContainer}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <HeroTitle />
-          </div>
-        </div>
-      )} */}
     </>
   );
 };

@@ -1,21 +1,24 @@
 import styles from "./FeaturesLayout.module.css";
-const MainCard = ({ number, title, text }) => {
+
+const MainCard = ({ number, title, text, h, vector, bg, variant }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.cardInner}>
+    <div className={variant === "long" ? styles.cardLong : styles.card}>
+      <div className={styles.cardInner} style={{ backgroundColor: bg }}>
         <div
           style={{
             width: "100%",
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
-            //   justifyContent: "space-between",
+            alignItems: "flex-start",
+            height: variant === "long" ? "20rem" : h,
+
+            justifyContent: "space-between",
           }}
         >
           <div
             style={{
-              borderRadius: "50%",
-              backgroundColor: "rgba(34, 105, 248, 0.6)",
+              borderRadius: "15px",
+              backgroundColor: "#fff",
               width: "4rem",
               height: "4rem",
               lineHeight: "4rem",
@@ -26,9 +29,14 @@ const MainCard = ({ number, title, text }) => {
           >
             {number}
           </div>
-          <h3 className={styles.h3}>{title}</h3>
+          {vector}
+
+          {/* <h3 className={styles.h3}>{title}</h3> */}
         </div>
-        <h4 className={styles.h4}>{text}</h4>
+        <div>
+          <h4 className={styles.h3}>{title}</h4>
+          <h4 className={styles.h4}>{text}</h4>
+        </div>
       </div>
     </div>
   );

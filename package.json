@@ -11,6 +11,7 @@
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
     "@iconscout/unicons": "^4.0.1",
+    "@lottiefiles/lottie-player": "^1.7.1",
     "@next/bundle-analyzer": "^13.0.7",
     "@next/font": "^13.0.7",
     "css-select": "^5.1.0",

@@ -1,1 +1,84 @@
-.mainContainer{min-height:100vh;overflow:hidden;width:100vw;background-color:#ececec;display:flex;flex-wrap:wrap;box-sizing:border-box}@media screen and (min-width:1400px){.mainContainer{padding-left:20rem!important;padding-right:20rem!important}}.gridElement{display:flex;align-items:center;padding-top:1rem}@media screen and (max-width:1400px){.gridElement{justify-content:center}}.flexColumn{width:100%;display:flex;flex-direction:column}.fontMain{font-size:6rem;margin:0;line-height:6rem}@media screen and (max-width:524px){.fontMain{font-size:4rem}}.fontSecondary{color:rgba(0,0,0,.6)!important;font-size:2rem}.divider{height:10px;width:100%;background-color:#2269f8;margin-top:1rem;margin-bottom:1rem}.buttonCustom{margin-top:1rem;font-size:2rem!important;width:50%!important}
+.mainContainer {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-image: url("bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.secondaryContainer {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1400px) {
+  .mainContainer {
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
+  }
+
+  .secondaryContainer {
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .mainContainer {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .secondaryContainer {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+}
+.gridElement {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 1400px) {
+  .gridElement {
+    justify-content: center;
+  }
+}
+.flexColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fontMain {
+  font-size: 6rem;
+  margin: 0;
+  line-height: 6rem;
+}
+@media screen and (max-width: 524px) {
+  .fontMain {
+    font-size: 4rem;
+  }
+}
+.fontSecondary {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 2rem;
+}
+.divider {
+  height: 10px;
+  width: 100%;
+  background-color: #2269f8;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.buttonCustom {
+  margin-top: 1rem;
+  font-size: 2rem !important;
+  width: 50% !important;
+}
