@@ -1,7 +1,9 @@
 .fontMain {
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0;
   line-height: 6rem;
+  font-family: "Khand", "sans-serif";
+  font-weight: 500;
 }
 .fontMainSecondary {
   font-size: 4rem;
@@ -11,18 +13,29 @@
 .fontSecondary {
   color: rgba(0, 0, 0, 0.5) !important;
   font-size: 2rem;
+  font-family: "Khand", "sans-serif";
+  font-weight: normal;
+}
+.paragraph {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  font-family: "Khand", "sans-serif";
+  font-weight: normal;
+  /* text-align: center; */
 }
 .gridElement {
-  align-items: center;
   padding-top: 1rem;
-  flex-grow: 0;
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 70%;
-  flex-basis: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  /* max-width: 100%; */
+
+  /* flex-basis: 100%; */
 }
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   .gridElement {
     justify-content: center;
     padding: 1rem;
@@ -35,14 +48,13 @@
     max-width: 80%;
     flex-basis: 80%;
   }
-}
+} */
 .flexColumn {
-  width: 100%;
-  min-height: 640px;
-  min-width: 800;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-basis: 50%;
+  padding: 1rem;
 }
 @media screen and (max-width: 524px) {
   .gridElement {
@@ -61,10 +73,7 @@
     max-width: 100%;
     flex-basis: 100%;
   }
-  .flexColumn {
-    align-items: center;
-    width: 100%;
-  }
+
   /* h3 {
     text-align: center;
   } */
@@ -115,10 +124,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1400px) {
-  .image {
-    display: none;
-    background-image: none;
+@media screen and (max-width: 1000px) {
+  .gridElement {
+    flex-direction: column;
   }
 }
 .img {

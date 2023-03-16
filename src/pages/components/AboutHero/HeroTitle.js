@@ -3,7 +3,7 @@ const HeroTitle = () => {
   return (
     <div className={styles.gridElement}>
       <div className={styles.flexColumn}>
-        <h1 className={styles.fontMainSecondary}>Our platform</h1>
+        <h1 className={styles.fontMain}>Our platform</h1>
         <hr className={styles.divider} />
         <div>
           <h1 className={styles.fontSecondary}>
@@ -11,8 +11,9 @@ const HeroTitle = () => {
             with auto-compounding vault strategies.
           </h1>
         </div>
-
-        <h3>
+      </div>
+      <div className={styles.flexColumn}>
+        <h3 className={styles.paragraph}>
           {" "}
           The dApp (decentralised application) focuses on bringing the best
           possible user experience in yield farming products investment as well
@@ -21,7 +22,7 @@ const HeroTitle = () => {
           your assets and offers vast range of investments to suit any DeFi
           user.
         </h3>
-        <h3>
+        <h3 className={styles.paragraph}>
           On a regular basis, Tonk Finance automatically collects (harvests) the
           reward tokens on your behalf and exchanges them for more of the
           underlying assets that you deposited, thereby compounding the interest
