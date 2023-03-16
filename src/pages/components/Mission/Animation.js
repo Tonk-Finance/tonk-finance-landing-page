@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const Animation = () => {
+const Animation = () => {
   const ref = useRef(null);
   const [lottie, setLottie] = useState(null);
 
@@ -25,3 +25,5 @@ export const Animation = () => {
 
   return <div ref={ref} />;
 };
+
+export default Animation;
