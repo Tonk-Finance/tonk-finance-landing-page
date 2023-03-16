@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-image: url("bg.png");
+  background-image: url("bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +28,17 @@
   .secondaryContainer {
     padding-left: 20rem !important;
     padding-right: 20rem !important;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .mainContainer {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .secondaryContainer {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
   }
 }
 .gridElement {

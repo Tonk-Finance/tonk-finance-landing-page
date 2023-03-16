@@ -14,7 +14,8 @@ const TONKWrapper = () => {
           rewards and project revenue share.
         </h4>
         <svg
-          height="20rem"
+          className={styles.svg}
+          width="50vw"
           viewBox="0 0 1500 500"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

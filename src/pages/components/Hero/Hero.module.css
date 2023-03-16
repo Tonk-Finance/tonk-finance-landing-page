@@ -26,44 +26,13 @@
   max-width: 50%;
   flex-basis: 50%;
 }
-@media screen and (max-width: 1400px) {
-  .gridElement {
-    justify-content: center;
-  }
-}
-.flexColumn {
-  width: 100%;
-  min-height: 640px;
-  min-width: 800;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media screen and (max-width: 524px) {
-  .fontMain {
-    font-size: 4rem;
-    text-align: center;
-  }
-  .fontSecondary {
-    text-align: center;
-  }
-  .gridElement {
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    flex-basis: 100%;
-  }
-  .flexColumn {
-    align-items: center;
-    width: 100%;
-  }
-}
 
 .buttonCustom {
   font-family: var(--inter-font);
   margin-top: 1rem;
   font-size: 2rem;
   width: 50%;
+  /* padding: 0.5rem; */
   display: flex;
   align-items: center;
   font-family: "Khand", "sans-serif";
@@ -106,7 +75,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .image {
     display: none;
     background-image: none;
@@ -114,4 +83,41 @@
 }
 .img {
   aspect-ratio: attr(width) / attr(height);
+}
+@media screen and (max-width: 1400px) {
+  .gridElement {
+    justify-content: center;
+  }
+}
+.flexColumn {
+  width: 100%;
+  min-height: 640px;
+  min-width: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .fontMain {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .fontSecondary {
+    text-align: center;
+  }
+  .gridElement {
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .flexColumn {
+    align-items: center;
+    width: 100%;
+  }
+  .buttonCustom {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

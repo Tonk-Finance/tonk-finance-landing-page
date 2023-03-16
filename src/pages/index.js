@@ -2,7 +2,6 @@ import Head from "next/head";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import styles from "./LandingPage.module.css";
 import HeroTitle from "./components/Hero/HeroTitle";
-import Divider from "./components/Hero/Divider";
 import dynamic from "next/dynamic";
 import { Suspense, memo } from "react";
 import { useState } from "react";
@@ -19,15 +18,18 @@ const DynamicCallToAction = dynamic(
     suspense: true,
   }
 );
+const DynamicTONKHero = dynamic(
+  () => import("./components/TONKHero/TONKWrapper"),
+  {
+    suspense: true,
+  }
+);
 const DynamicImage = dynamic(
   () => import("./components/Hero/HeroImageWrapper"),
   {
     suspense: true,
   }
 );
-const DynamicSocials = dynamic(() => import("./components/Socials/Socials"), {
-  suspense: true,
-});
 
 const IndexPage = memo(() => {
   const [open, setOpen] = useState(false);
@@ -77,7 +79,6 @@ const IndexPage = memo(() => {
             <Suspense fallback={`Loading...`}>
               <DynamicImage />
             </Suspense>
-            {/* <Divider /> */}
             <Suspense fallback={`Loading...`}>
               <DynamicFeatures />
             </Suspense>
@@ -85,14 +86,11 @@ const IndexPage = memo(() => {
         )}
       </div>
       {!open && (
-        <>
+        <div className={styles.secondaryContainer}>
           <Suspense fallback={`Loading...`}>
-            <DynamicCallToAction />
+            <DynamicTONKHero />
           </Suspense>
-          <Suspense fallback={`Loading...`}>
-            <DynamicSocials />
-          </Suspense>
-        </>
+        </div>
       )}
     </>
   );

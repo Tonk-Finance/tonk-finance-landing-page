@@ -1,10 +1,8 @@
 import styles from "./FeaturesLayout.module.css";
+
 const MainCard = ({ number, title, text, h, vector, bg, variant }) => {
   return (
-    <div
-      className={styles.card}
-      style={{ maxWidth: variant === "long" ? "33.333%" : "60%" }}
-    >
+    <div className={variant === "long" ? styles.cardLong : styles.card}>
       <div className={styles.cardInner} style={{ backgroundColor: bg }}>
         <div
           style={{
