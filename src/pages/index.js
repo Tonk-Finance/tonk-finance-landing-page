@@ -12,12 +12,7 @@ const DynamicFeatures = dynamic(
     suspense: true,
   }
 );
-const DynamicCallToAction = dynamic(
-  () => import("./components/CallToAction/CallToAction"),
-  {
-    suspense: true,
-  }
-);
+
 const DynamicTONKHero = dynamic(
   () => import("./components/TONKHero/TONKWrapper"),
   {
