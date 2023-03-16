@@ -1,8 +1,10 @@
 import styles from "./Navbar.module.css";
 import { UilBars } from "@iconscout/react-unicons";
 import { UilTimes } from "@iconscout/react-unicons";
-
+import { useRouter } from "next/router";
 const CustomNavbar = ({ open, handleOpen, handleClose }) => {
+  const router = useRouter();
+  console.log(router);
   return (
     <div className={styles.main}>
       <div className={styles.row}>
@@ -76,7 +78,24 @@ const CustomNavbar = ({ open, handleOpen, handleClose }) => {
         </a>
         <hr className={styles.divider} />
         <div className={styles.wrapper}>
-          <a className={styles.navlink} href="/about">
+          <a
+            className={
+              router && router.pathname === "/"
+                ? styles.navlinkActive
+                : styles.navlink
+            }
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            className={
+              router && router.pathname === "/about"
+                ? styles.navlinkActive
+                : styles.navlink
+            }
+            href="/about"
+          >
             About
           </a>
           <a
