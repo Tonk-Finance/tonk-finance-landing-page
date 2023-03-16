@@ -1,6 +1,6 @@
 import styles from "./mission.module.css";
 import diamond from "./diamond.gif";
-import { Animation } from "./Animation";
+import Animation from "./Animation";
 const OurMission = () => {
   console.log(diamond);
   return (
